@@ -1,7 +1,7 @@
-FROM node:lts-alpine3.15
+FROM node:alpine3.17
 MAINTAINER Eracorp Technologies <info@eracorp.io> 
 
-ARG RETIRE_VERSION=3.1.0
+ARG RETIRE_VERSION=4.1.1
 
 #installing retire packages and adding a system user named retirejs
 RUN npm install -g retire@${RETIRE_VERSION}
